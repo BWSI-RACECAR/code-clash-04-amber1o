@@ -28,7 +28,7 @@ class Solution:
         x = []
         for f in input:
             if f in x:
-                return false
+                return False
             else:
                 x.append(f)
 def main():
