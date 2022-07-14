@@ -25,12 +25,12 @@ Input: “qwer12341”      Output: False
 
 class Solution:
     def validateName(self,input):
-        # type input: string
-        # return: bool
-            
-        # TODO: Write code below to return a bool with the solution to the prompt
-        pass
-
+        x = []
+        for f in input:
+            if f in x:
+                return false
+            else:
+                x.append(f)
 def main():
     string1 = input()
 
