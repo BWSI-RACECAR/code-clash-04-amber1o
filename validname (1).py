@@ -25,15 +25,28 @@ Input: “qwer12341”      Output: False
 
 class Solution:
     def validateName(self,input):
-        output= []
-        for c in input:
-            if c not in output:
-                return True 
+        # output= ""
+        # for c in input:
+        #     if c not in output:
+        #         return False 
     
-        # return: bool
+        # # return: bool
             
-        # TODO: Write code below to return a bool with the solution to the prompt
-        pass
+        # # TODO: Write code below to return a bool with the solution to the prompt
+        # pass
+
+        duplicates = {}
+        for char in string:
+        ## checking whether the char is already present in dictionary or not
+            if char in duplicates:
+                ## increasing count if present
+                duplicates[char] += 1
+            else:
+                ## initializing count to 1 if not present
+                duplicates[char] = 1
+        for key, value in duplicates.items():
+            if value > 1:
+                return False
 
 
 
