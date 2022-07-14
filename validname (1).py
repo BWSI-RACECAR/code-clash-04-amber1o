@@ -28,8 +28,10 @@ class Solution:
         output= []
         for c in input:
             if input.isalnum:
-                if c not in output:
-                    return False 
+                if c in output:
+                    return True
+                else:
+                    return False
             else: 
                 return False
             
