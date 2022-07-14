@@ -25,13 +25,12 @@ Input: “qwer12341”      Output: False
 
 class Solution:
     def validateName(self,input):
-        x = []
+        x = dict()
         for f in input:
             if f in x:
                 return False
             else:
-                x.append(f)
-                return True
+                x[f]=0
 def main():
     string1 = input()
 
