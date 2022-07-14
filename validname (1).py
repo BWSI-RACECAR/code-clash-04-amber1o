@@ -25,31 +25,33 @@ Input: “qwer12341”      Output: False
 
 class Solution:
     def validateName(self,input):
-        # output= ""
-        # for c in input:
-        #     if c not in output:
-        #         return False 
-    
-        # # return: bool
-            
-        # # TODO: Write code below to return a bool with the solution to the prompt
-        # pass
-
-        duplicates = {}
-        for char in string:
-        ## checking whether the char is already present in dictionary or not
-            if char in duplicates:
-                ## increasing count if present
-                duplicates[char] += 1
-            else:
-                ## initializing count to 1 if not present
-                duplicates[char] = 1
-        for key, value in duplicates.items():
-            if value > 1:
+        output= []
+        for c in input:
+            if input.isalnum:
+                if c not in output:
+                    return False 
+            else: 
                 return False
+            
+        # return: bool
+            
+        # TODO: Write code below to return a bool with the solution to the prompt
+        pass
 
 
-
+def my_grocery_list(self,str1,str2):
+        final_list = []
+        list1 = str1.split(' ')
+        list1[len(list1)-1] = list1[len(list1) - 1].strip()
+        list2 = str2.split(' ')
+        list2[len(list2)-1] = list2[len(list2)- 1].strip()
+        for item in list1:
+            if item not in final_list and item != '':
+                final_list.append(item)
+        for item in list2:
+            if item not in final_list and item != '':
+                final_list.append(item)
+        return final_list
 def main():
     string1 = input()
 
