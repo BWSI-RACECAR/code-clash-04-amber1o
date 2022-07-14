@@ -31,6 +31,7 @@ class Solution:
                 return False
             else:
                 x[f]=0
+        return True
 def main():
     string1 = input()
 
