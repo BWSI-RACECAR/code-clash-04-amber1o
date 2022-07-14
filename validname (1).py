@@ -42,12 +42,13 @@ class Solution:
             
     #     # TODO: Write code below to return a bool with the solution to the prompt
     #     pass
-    x = []
+    x = dict()
     for f in input:
         if f in x:
             return false
         else:
-            x.append(f)
+            x[f] = 0 
+    return true
 
 
 def my_grocery_list(self,str1,str2):
