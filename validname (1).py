@@ -23,22 +23,31 @@ Input: “Aa123a”         Output: False
 Input: “qwer12341”      Output: False
 """
 
+from sqlalchemy import false
+
+
 class Solution:
-    def validateName(self,input):
-        output= []
-        for c in input:
-            if input.isalnum:
-                if c in output:
-                    return True
-                else:
-                    return False
-            else: 
-                return False
+    # def validateName(self,input):
+    #     output= []
+    #     for c in input:
+    #         if input.isalnum:
+    #             if c in output:
+    #                 return True 
+    #             else:
+    #                 return False
+    #         else: 
+    #             return False
             
-        # return: bool
+    #     # return: bool
             
-        # TODO: Write code below to return a bool with the solution to the prompt
-        pass
+    #     # TODO: Write code below to return a bool with the solution to the prompt
+    #     pass
+    x = []
+    for f in input:
+        if f in x:
+            return false
+        else:
+            x.append(f)
 
 
 def my_grocery_list(self,str1,str2):
